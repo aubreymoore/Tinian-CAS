@@ -56,12 +56,14 @@ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=tru
 
 \pagebreak
 
-The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-cycad-images/raw/main/report/tinian_cycad_images.pdf}.
+The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-CAS/raw/main/reports/leaf_samples.pdf}.
 
 All data and code used in this report are available in a public GitHub repository at
-\url{https://github.com/aubreymoore/Tinian-cycad-images}.
+\url{https://github.com/aubreymoore/Tinian-CAS}.
 
 \section{Introduction}
+
+
 
 %Ken Puliafico very kindly shared 81 high quality close-up images of \textit{Cycas micronesica} growing on Tinian outside the conservation plots. These were recorded using a Google Pixel 3a cell phone. Some of the images clearly indicated CAS infestation (Fig. \ref{fig:crawlers}). Images were used to generate an interactive web map to facilitate visualization. QGIS was used to generate a web map to facilitate access to the georeferenced images (Figs. \ref{fig:screenshot-from-2022-03-24-09-21-42} and \ref{fig:webmap}).
 
@@ -72,6 +74,7 @@ All data and code used in this report are available in a public GitHub repositor
 %	\label{fig:crawlers}
 %\end{figure}
 
+\clearpage
 \section{Methods}
 
 %All data processing was performed using free, open-source software.
@@ -87,7 +90,35 @@ All data and code used in this report are available in a public GitHub repositor
 %An interactive web map was prepared using QGIS 3.22. The QGIS project file is available in the GitHub repository.
 
 \clearpage
-%\section{Results}
+\section{Results}
+
+\begin{table}[h]
+	\centering
+	\caption{caption}
+	\label{leaf_samples_table}
+	\begin{footnotesize}
+	\begin{tabular}{rrrrllllll}
+		\toprule
+		plot &  tree &  latitude &  longitude &       date & cas & black scale & predation & parasitism &       notes \\
+		\midrule
+		4 &    39 &           &            & 2022-02-26 &  no &         yes &        no &         no &             \\
+		13 &   436 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
+		15 &   685 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
+		16 &   503 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
+		17 &   439 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
+		14 &   472 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
+		18 &   464 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
+		12 &   458 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
+		6 &   373 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
+		8 &   421 &           &            & 2022-02-26 & yes &          no &        no &         no & sent to SEL \\
+		19 &   469 &           &            & 2022-02-26 & yes &          no &        no &         no & sent to SEL \\
+		5 &   382 &           &            & 2022-02-26 &  no &         yes &        no &         no & sent to SEL \\
+		\bottomrule
+	\end{tabular}
+	\end{footnotesize}
+\end{table}
+
+
 %
 %\begin{figure}[h]
 %	\centering

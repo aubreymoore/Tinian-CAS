@@ -1,0 +1,109 @@
+\documentclass[12pt,letterpaper,english,bibliography=totocnumbered, abstract=on]{scrartcl}
+
+\usepackage{indentfirst}
+\usepackage[titletoc]{appendix}
+\usepackage{fullpage}
+%\usepackage{subfiles}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{color}
+\usepackage{babel}
+\usepackage{verbatim}
+\usepackage[unicode=true,pdfusetitle,
+bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]
+{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,urlcolor=blue}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{threeparttable}
+\usepackage[table]{xcolor}
+\usepackage{csquotes}
+\usepackage{soul} % for hiliting text: \hl
+
+\usepackage[backend=biber, style=authoryear, maxbibnames=99, dashed=false]{biblatex}
+\setlength\bibitemsep{2\itemsep}
+%\addbibresource{mylibrary.bib}
+%\addbibresource{CRB.bib}
+
+\usepackage{pdfpages}
+\usepackage{float} % Allows use of H to place floats
+
+\usepackage{pgfgantt}
+
+\usepackage{framed}
+
+% Prevent page breaks within paragraphs
+% https://tex.stackexchange.com/questions/21983/how-to-avoid-page-breaks-inside-paragraphs
+\widowpenalties 1 10000
+
+\begin{document}
+
+\titlehead{Technical Report}
+
+\title{Monitoring \textit{Aulacaspis yasumatsui} on \textit{Cycas micronesica} in the Tinian Conservation Plots using Sticky Traps}
+
+\author{Aubrey Moore}
+
+\date{March 27, 2022\\Revised March 27, 2022}
+
+\maketitle
+\newpage
+\tableofcontents
+
+\pagebreak
+
+The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-CAS/raw/main/reports/leaf_samples.pdf}.
+
+All data and code used in this report are available in a public GitHub repository at
+\url{https://github.com/aubreymoore/Tinian-CAS}.
+
+\section{Introduction}
+
+\clearpage
+\section{Methods}
+
+Rapid scan.
+
+\clearpage
+\section{Results}
+
+\begin{table}[h]
+	\centering
+	\caption{caption}
+	\label{rapid_scan_table}
+	\begin{tabular}{rrr}
+		\toprule
+		plot &  crawler &  coccinellid \\
+		\midrule
+		1 &        1 &            0 \\
+		2 &        0 &            0 \\
+		3 &        0 &            0 \\
+		4 &        0 &            1 \\
+		5 &        1 &            0 \\
+		6 &        0 &            0 \\
+		7 &        0 &            0 \\
+		8 &        1 &            0 \\
+		9 &        1 &            1 \\
+		10 &        0 &            0 \\
+		11 &        0 &            0 \\
+		12 &        0 &            0 \\
+		13 &        0 &            0 \\
+		14 &        1 &            0 \\
+		15 &        1 &            0 \\
+		16 &        1 &            0 \\
+		17 &        1 &            0 \\
+		18 &        0 &            0 \\
+		19 &        0 &            0 \\
+		20 &        0 &            0 \\
+		21 &        0 &            1 \\
+		22 &        1 &            0 \\
+		23 &        0 &            0 \\
+		24 &        0 &            0 \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\end{document}
