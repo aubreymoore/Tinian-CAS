@@ -1,13 +1,13 @@
-plot,tree,latitude,longitude,date,cas,black scale,predation,parasitism,notes
-4,39,,,2022-02-26,no,yes,no,no,
-13,436,,,2022-02-26,yes,no,no,no,
-15,685,,,2022-02-26,yes,no,no,no,
-16,503,,,2022-02-26,yes,no,no,no,
-17,439,,,2022-02-26,yes,no,no,no,
-14,472,,,2022-02-26,yes,no,no,no,
-18,464,,,2022-02-26,yes,no,no,no,
-12,458,,,2022-02-26,yes,no,no,no,
-6,373,,,2022-02-26,yes,no,no,no,
-8,421,,,2022-02-26,yes,no,no,no,sent to SEL
-19,469,,,2022-02-26,yes,no,no,no,sent to SEL
-5,382,,,2022-02-26,no,yes,no,no,sent to SEL
+plot,tree,easting,northing,date,cas,black scale,predation,parasitism,notes,label
+4,39,352700.39,1663023.622,2/26/2022,no,yes,no,no,,4-39 BLACK SCALE
+5,382,352718,1663065.015,2/26/2022,no,yes,no,no,sent to SEL,5-382 BLACK SCALE
+6,373,352735.261,1663103.808,2/26/2022,yes,no,no,no,,6-373 CAS
+8,421,352778.663,1663135.056,2/26/2022,yes,no,no,no,sent to SEL,8-421 CAS
+12,458,352779.8,1663260.768,2/26/2022,yes,no,no,no,,12-458 CAS
+13,436,352773.508,1663286.31,2/26/2022,yes,no,no,no,,13-436 CAS
+14,472,352767.065,1663313.458,2/26/2022,yes,no,no,no,,14-472 CAS
+15,685,352838.667,1663404.025,2/26/2022,yes,no,no,no,,15-685 CAS
+16,503,352799.5,1663256.123,2/26/2022,yes,no,no,no,,16-503 CAS
+17,439,352802.23,1663245.4,2/26/2022,yes,no,no,no,,17-439 CAS
+18,464,352806.689,1663235.551,2/26/2022,yes,no,no,no,,18-464 CAS
+19,469,352812.907,1663207.038,2/26/2022,yes,no,no,no,sent to SEL,19-469 CAS

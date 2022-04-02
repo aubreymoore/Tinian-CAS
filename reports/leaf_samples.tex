@@ -9,6 +9,14 @@
 \usepackage{color}
 \usepackage{babel}
 \usepackage{verbatim}
+
+\usepackage{listings}
+%\lstset{
+%	basicstyle=\small\ttfamily,
+%	columns=flexible,
+%	breaklines=true
+%}
+
 \usepackage[unicode=true,pdfusetitle,
 bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
 breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]
@@ -45,94 +53,81 @@ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=tru
 
 \title{Monitoring \textit{Aulacaspis yasumatsui} on \textit{Cycas micronesica} in the Tinian Conservation Plots using Leaf Samples}
 
-\author{Aubrey Moore}
+\author{Aubrey Moore and Jason Andrew}
 
-\date{March 24, 2022\\Revised March 24, 2022}
+\date{
+	March 24, 2022, Revised April 2, 2022
+	\footnote{
+		The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-CAS/raw/main/reports/leaf_samples.pdf}.
+		
+		All data and code used in this report are available in a public GitHub repository at
+		\url{https://github.com/aubreymoore/Tinian-CAS}.
+	}
+}
 
 \maketitle
 %\footnote{\url{https://github.com/aubreymoore/2020-FS-CRB-biocontrol-project/blob/master/combined-proposal.pdf}}
-\newpage
+
+
+\begin{abstract}
+Leaf samples were collected from 12 \textit{Cycas micronesica} plants growing in the Tinian conservation plots on 2022-02-26.
+The primary purpose of theses samples was to assess the presence of \textit{Aulacaspis yasumatsui}, cycad aulacaspis scale (CAS). A secondary objective was to confirm identity of the scale insect and a third objective was to look for signs of predation and/or parasitism. 
+
+Microscopic examination indicated that the 10 most northerly sampled plants were infested with CAS. However, the 2 most southerly plants were infested only with an unidentified, dark colored armored scale (Diaspididae). Specimens of both scale insects were sent to the USDA Systematic Entomology Laboratory for species determination. No indication of predation or parasitism was seen.  
+\end{abstract}
+
+
+
+\clearpage
 \tableofcontents
-
-\pagebreak
-
-The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-CAS/raw/main/reports/leaf_samples.pdf}.
-
-All data and code used in this report are available in a public GitHub repository at
-\url{https://github.com/aubreymoore/Tinian-CAS}.
-
-\section{Introduction}
-
-
-
-%Ken Puliafico very kindly shared 81 high quality close-up images of \textit{Cycas micronesica} growing on Tinian outside the conservation plots. These were recorded using a Google Pixel 3a cell phone. Some of the images clearly indicated CAS infestation (Fig. \ref{fig:crawlers}). Images were used to generate an interactive web map to facilitate visualization. QGIS was used to generate a web map to facilitate access to the georeferenced images (Figs. \ref{fig:screenshot-from-2022-03-24-09-21-42} and \ref{fig:webmap}).
-
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=1\linewidth]{../images/PXL_20210725_040405506}
-%	\caption{This image of \textit{Cycas micronsesica} leaflets infested with CAS was taken by Ken Puliafico on Mount Lasu, Tinian on July 25 2021. It is remarkable because large numbers of scale crawlers are clearly visible.}
-%	\label{fig:crawlers}
-%\end{figure}
 
 \clearpage
 \section{Methods}
 
-%All data processing was performed using free, open-source software.
-%
-%Data were prepared using Python 3 in a \href{https://github.com/aubreymoore/Tinian-cycad-images/blob/main/code/select\_1\_image\_at\_each\_location.ipynb}{Jupyter Notebook} which performed the following steps.
-%
-%\begin{itemize}
-%	\item Latitude, longitude and time stamp were extracted from each image file. \item Multiple images taken at each unique location. A folder was created for each unique location and it was populated with images from that location.
-%	\item All images in the above folders were examined for presence of cycad aulacaspis scale and an examplar image for the location was selected. This step was performed manually.
-%	\item Data for each unique location were stored in a \href{https://github.com/aubreymoore/Tinian-cycad-images/blob/main/images.csv}{CSV file} which was subsequently used for generating a web map.
-%\end{itemize}
-%
-%An interactive web map was prepared using QGIS 3.22. The QGIS project file is available in the GitHub repository.
+On 2022-02-26 \textit{Cycas micronesica} leaflet samples were collected at 12 points along a north-south transect of the Tinian conservation plots. This was not a random sample because the objective was to collect 2 to 4 leaflets which were most heavily infest with scale insects at each point. Leaflets were collected into vials containing food-grade propylene glycol as a preservative. Ethanol would normally be used for this, but we used propylene glycol as an alternative to avoid problems with shipping hazardous material on aircraft. The label on each vial contained a plot ID and a plant ID. Coordinates for each sampled plant were extracted the project GIS database in UTM format (Coordinate Reference System: EPSG:32655 - WGS 84 / UTM zone 55N).
 
-\clearpage
+After the samples were transported from Tinian to Guam, they were examined under a dissecting microscope to determine presence of scale insects, predators and parasitoids.  
+
+Raw data were stored in a CSV file (Appendix \ref{leaf_samples.csv}) and QGIS was used to map results (Fig. \ref{fig:map-image}). 
+
 \section{Results}
 
-\begin{table}[h]
+Leaflets in all samples were infested with scale insects (Figure \ref{fig:map-image}). The 10 most northerly sampled plants were infested with what appeared to be CAS. However, the 2 most southerly plants were infested with an unidentified, dark colored armored scale (Diaspididae). Specimens of both have been sent to the USDA Systematic Entomology Laboratory for species determination. This document will be updated when species determination results are received.
+
+No indication of predation or parasitism was seen in any of the samples. 
+
+
+%\begin{table}[h!]
+%	\caption{Listing 1: \textbf{leaf\_samples.csv}}
+%	\label{leaf_samples.csv}	
+%	\lstinputlisting[basicstyle=\small\ttfamily, breaklines=true, columns=flexible]{../leaf_samples/leaf_samples.csv}
+%\end{table}
+
+% TODO: \usepackage{graphicx} required
+\begin{figure}[h!]
 	\centering
-	\caption{caption}
-	\label{leaf_samples_table}
-	\begin{footnotesize}
-	\begin{tabular}{rrrrllllll}
-		\toprule
-		plot &  tree &  latitude &  longitude &       date & cas & black scale & predation & parasitism &       notes \\
-		\midrule
-		4 &    39 &           &            & 2022-02-26 &  no &         yes &        no &         no &             \\
-		13 &   436 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
-		15 &   685 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
-		16 &   503 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
-		17 &   439 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
-		14 &   472 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
-		18 &   464 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
-		12 &   458 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
-		6 &   373 &           &            & 2022-02-26 & yes &          no &        no &         no &             \\
-		8 &   421 &           &            & 2022-02-26 & yes &          no &        no &         no & sent to SEL \\
-		19 &   469 &           &            & 2022-02-26 & yes &          no &        no &         no & sent to SEL \\
-		5 &   382 &           &            & 2022-02-26 &  no &         yes &        no &         no & sent to SEL \\
-		\bottomrule
-	\end{tabular}
-	\end{footnotesize}
-\end{table}
+	\includegraphics[width=\linewidth]{../leaf_samples/map-image}
+	\caption{Map showing location of leaf samples from \textit{Cycas micronesica} growing in the Tinian conservation plots. Numbers indicate plot ID and plant ID. \textbf{CAS} indicates presence of \textit{Aulacaspis yasumatsui} on the leaf sample and \textbf{BLACK SCALE} indicates presence of an unidentified diaspidid.}
+	\label{fig:map-image}
+\end{figure}
 
+\clearpage
+\begin{appendices}
+	
+	\section{Raw data: leaf\_samples.csv}
+	\label{leaf_samples.csv}
+	\lstinputlisting[basicstyle=\small\ttfamily, breaklines=true, columns=flexible]{../leaf_samples/leaf_samples.csv}
+		
 
-%
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=1\linewidth]{"Screenshot from 2022-03-24 09-21-42"}
-%	\caption{Map showing 3 clusters of \textit{Cycas micronesica} plants. Images plants in the most southern cluster indicate CAS infestation.}
-%	\label{fig:screenshot-from-2022-03-24-09-21-42}
-%\end{figure}
-%
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=1\linewidth]{webmap}
-%	\caption{Interactive web map of \textit{Cycas micronesica} locations and images.
-%	Publicly available at \url{https://aubreymoore.github.io/Tinian-cycad-images/webmap/webmap/}}
-%	\label{fig:webmap}
-%\end{figure}
+	\section{Bibtex record}
+	\begin{lstlisting}[basicstyle=\small\ttfamily, breaklines=true, columns=flexible]
+	@misc{moore-2022-04-02,
+	title = {Monitoring \textit{Aulacaspis yasumatsui} on \textit{Cycas micronesica} in the Tinian Conservation Plots using Leaf Samples},
+	author = {Aubrey Moore and Jason Andrew},
+	url = {https://github.com/aubreymoore/Tinian-CAS/raw/main/reports/leaf_samples.pdf} 	
+	}
+	\end{lstlisting}
+		
+\end{appendices}
 
 \end{document}

@@ -9,6 +9,14 @@
 \usepackage{color}
 \usepackage{babel}
 \usepackage{verbatim}
+
+\usepackage{listings}
+%\lstset{
+%	basicstyle=\small\ttfamily,
+%	columns=flexible,
+%	breaklines=true
+%}
+
 \usepackage[unicode=true,pdfusetitle,
 bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
 breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]
@@ -45,65 +53,57 @@ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=tru
 
 \title{Monitoring \textit{Aulacaspis yasumatsui} on \textit{Cycas micronesica} in the Tinian Conservation Plots using Sticky Traps}
 
-\author{Aubrey Moore}
+\author{Aubrey Moore and Jason Andrew}
 
-\date{March 27, 2022\\Revised March 27, 2022}
+\date{
+	April 2, 2022, Revised April 2, 2022
+	\footnote{
+		The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-CAS/raw/main/reports/sticky_traps.pdf}.
+		
+		All data and code used in this report are available in a public GitHub repository at
+		\url{https://github.com/aubreymoore/Tinian-CAS}.
+	}
+}
 
 \maketitle
-\newpage
+%\footnote{\url{https://github.com/aubreymoore/2020-FS-CRB-biocontrol-project/blob/master/combined-proposal.pdf}}
+
+
+\begin{abstract}
+	Abstract goes here.
+\end{abstract}
+
+
+
+\clearpage
 \tableofcontents
-
-\pagebreak
-
-The most recent version of this document may be downloaded from \url{https://github.com/aubreymoore/Tinian-CAS/raw/main/reports/leaf_samples.pdf}.
-
-All data and code used in this report are available in a public GitHub repository at
-\url{https://github.com/aubreymoore/Tinian-CAS}.
-
-\section{Introduction}
 
 \clearpage
 \section{Methods}
 
-Rapid scan.
+Methods go here.
 
-\clearpage
 \section{Results}
 
-\begin{table}[h]
-	\centering
-	\caption{caption}
-	\label{rapid_scan_table}
-	\begin{tabular}{rrr}
-		\toprule
-		plot &  crawler &  coccinellid \\
-		\midrule
-		1 &        1 &            0 \\
-		2 &        0 &            0 \\
-		3 &        0 &            0 \\
-		4 &        0 &            1 \\
-		5 &        1 &            0 \\
-		6 &        0 &            0 \\
-		7 &        0 &            0 \\
-		8 &        1 &            0 \\
-		9 &        1 &            1 \\
-		10 &        0 &            0 \\
-		11 &        0 &            0 \\
-		12 &        0 &            0 \\
-		13 &        0 &            0 \\
-		14 &        1 &            0 \\
-		15 &        1 &            0 \\
-		16 &        1 &            0 \\
-		17 &        1 &            0 \\
-		18 &        0 &            0 \\
-		19 &        0 &            0 \\
-		20 &        0 &            0 \\
-		21 &        0 &            1 \\
-		22 &        1 &            0 \\
-		23 &        0 &            0 \\
-		24 &        0 &            0 \\
-		\bottomrule
-	\end{tabular}
-\end{table}
+Results go here.
+
+\clearpage
+\begin{appendices}
+	
+	\section{Raw data: leaf\_samples.csv}
+	\label{leaf_samples.csv}
+	\lstinputlisting[basicstyle=\small\ttfamily, breaklines=true, columns=flexible]{../sticky_traps/rapid_scan.csv}
+		
+
+	\section{Bibtex record}
+	\begin{lstlisting}[basicstyle=\small\ttfamily, breaklines=true, columns=flexible]
+	@misc{moore-2022-04-02,
+	title = {Monitoring \textit{Aulacaspis yasumatsui} on \textit{Cycas micronesica} in the Tinian Conservation Plots using Sticky Traps},
+	author = {Aubrey Moore and Jason Andrew},
+	url = {https://github.com/aubreymoore/Tinian-CAS/raw/main/reports/sticky_traps.pdf} 	
+	}
+	\end{lstlisting}
+		
+\end{appendices}
 
 \end{document}
